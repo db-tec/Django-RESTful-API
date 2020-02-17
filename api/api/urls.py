@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-from core.views import UsersViewSet
+from core.views import UserViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'Users', UsersViewSet)
+router.register(r'User', UserViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),   

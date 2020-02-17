@@ -1,6 +1,6 @@
 from django.db import models
 
-class Users(models.Model):
+class User(models.Model):
     uid = models.CharField(max_length=255)
     nm_user = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
